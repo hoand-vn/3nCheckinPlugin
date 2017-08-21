@@ -1,0 +1,21 @@
+{% extends 'default_frame.twig' %}
+
+{% set mypageno = 'index' %}
+
+{% set body_class = 'mypage' %}
+
+{% block main %}
+<h1>detail Checkin</h1>
+
+        <div id="detail_list__item_box--{{ data.id }}" class="item_box tr">
+            <div id="detail_list__item--{{ data.id }}" class="td table">
+                <div  class="">
+                    {{ data.name}}
+                </div>
+                <div  class="">
+                    {{ data.place}}
+                </div>
+            </div>    
+        </div>
+
+{% endblock %}

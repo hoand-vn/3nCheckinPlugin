@@ -1,0 +1,10 @@
+{% extends 'default_frame.twig' %}
+
+{% set mypageno = 'index' %}
+
+{% set body_class = 'mypage' %}
+
+{% block main %}
+<h1>create Checkin</h1>
+    {% include 'Checkin/Form/checkin.twig' %}
+{% endblock %}

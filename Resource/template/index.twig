@@ -1,0 +1,21 @@
+{% extends 'default_frame.twig' %}
+
+{% set mypageno = 'index' %}
+
+{% set body_class = 'mypage' %}
+
+{% block main %}
+<h1>index Checkin</h1>
+    {% for datum in data %}
+        <div id="detail_list__item_box--{{ datum.id }}" class="item_box tr">
+            <div id="detail_list__item--{{ datum.id }}" class="td table">
+                <div  class="">
+                    {{ datum.name}}
+                </div>
+                <div  class="">
+                    {{ datum.place}}
+                </div>
+            </div>    
+        </div>
+    {% endfor %}
+{% endblock %}

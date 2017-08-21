@@ -1,0 +1,6 @@
+# front page event
+Product/detail.twig:
+    - [onRenderProductDetail, NORMAL]
+
+front.product.detail.initialize:
+    - [onProductDetailInitialize, NORMAL]

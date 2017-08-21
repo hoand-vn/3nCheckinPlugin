@@ -1,0 +1,8 @@
+name: Checkin
+code: Checkin
+version: 1.0.0
+event: ServiceListener
+service:
+    - CheckinServiceProvider
+orm.path:
+    - /Entity

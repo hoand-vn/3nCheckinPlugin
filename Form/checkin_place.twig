@@ -1,0 +1,13 @@
+{%- extends 'Form/bootstrap_3_horizontal_layout.html.twig' -%}
+
+{%- block _plugin_checkin_place_row -%}
+    <dl>
+        <dt>
+            {{ form_label(form, 'Place', {'label_attr': {'class': 'ec-label'}}) }}
+        </dt>
+        <dd>
+            {{ form_widget(form) }}
+            {{ form_errors(form) }}
+        </dd>
+    </dl>
+{%- endblock _plugin_checkin_place_row -%}
